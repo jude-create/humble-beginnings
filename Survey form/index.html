@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+    <title>survey form</title>
+</head>
+<body>
+    <main id="title">
+        <h1>Survey Form</h1>
+    </main>
+    <div id="description">
+       <p>This is a survey form to know the number of people that are eligible for this year census,start by filling out this form, then click submit.
+           All fields are required to be filled
+       </p>
+    </div>
+    <form id="survey-form">
+        <label id="name-label"><strong>Name:</strong></label>
+        <input id="name" name="username"  type="text" required placeholder="John Doe"/>
+        <br/><br/> 
+        <label id="email-label"><strong>E-mail address:</strong></label>
+        <input id="email" name="email"  type="email"required placeholder="email@example.com"/>
+        <br/><br/> 
+        <label id="number-label"><strong>Your Number:</strong></label>
+        <input id="number" name="tel"  type="number"required placeholder="000 0000 0000" pattern="[0-9] {11}"/>
+        <br/><br/>
+        <div id="dropdown">
+            <h5>GENDER:</h5>
+            <input type="radio" name="gender" value="male"/><strong>Male</strong><br/>
+            <input type="radio" name="gender" value="female"/><strong>Female</strong>
+            <br/><br/>
+            <h5>AGE:</h5>
+            <input type="radio" name="age" value="over"/><strong>Over 18yrs</strong> <br/>
+            <input type="radio" name="age" value="under"/><strong>Under 18yrs</strong>
+            <br/><br/>
+            <h4>Current Relationship:</h4> 
+            <input type="checkbox" name="gender" value="1"/><strong>Married</strong>
+            <input type="checkbox" name="gender" value="2"/><strong>Single</strong><br/><br/>
+            <h4>Only If necessary</h4>
+            <input type="checkbox" name="gender" value="3"/><strong>Student</strong>
+            <br/>
+            <br/>
+            <h4>Current Status:</h4>
+            <input type="checkbox" name="gender" value="4"/><strong>Employed</strong>
+            <input type="checkbox" name="gender" value="5"/><strong>Unemployed</strong>
+        </div>
+        <br/>
+        <textarea id="textarea" name="message" placeholder="write a message"></textarea>
+        <br/>
+        <input id="submit" type="submit" value="submit"/>
+    </form>  
+</body>
+</html>
+

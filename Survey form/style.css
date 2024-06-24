@@ -1,0 +1,69 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("image/lobostudio-hamburg-MzH7FXlMc0U-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    color: ghostwhite;
+    background-color: rgba(0, 0, 0,0.8);
+    background-size:contain ;
+    font: 1.2em sans-serif;
+    padding-top: 20px;
+}
+#title{
+  
+    width: 240px;
+    margin: auto;
+}
+#description{
+    
+    width: 500px;
+    height: 60px;
+    margin: auto;
+    
+   
+}
+#survey-form{
+    margin: auto;
+    padding-left:32% ;
+    padding-top: 35px;
+}
+#textarea{
+    width: 350px;
+    height: 100px;
+}
+#submit{
+    background-color: blue;
+    color: black;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+#submit:hover{
+   color: red;
+}
+@media only screen and (max-width: 468px) {
+#description{
+    width:  400px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    #survey-form{
+        padding-left:19% ;   
+    }  
+    #textarea{
+        width: 230px;
+    }
+    #description{
+        padding-right: 0px;
+    }  
+}
+
+    
+    #description{
+        padding-right: 0px;
+    }  
+

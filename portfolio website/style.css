@@ -1,0 +1,391 @@
+*, html{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
+ }
+ html{
+     
+     scroll-behavior: smooth;
+ }
+ body{
+
+    left: 0;
+    right: 0;
+    background-image: url('images/krishna-chaitanya-kaluva-UNpqrcSv5Ec-unsplash.jpg');
+    background-size: cover;
+    width: 100%;
+ }
+ 
+p{
+    font-size: 1.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+header{
+   background-color: black;
+    height: 112px;
+    line-height: 112px;
+   
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   width: 100%;
+}
+ul{
+    list-style: none;
+}
+.nav-sec{
+    float:right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+.nav-sec li a{
+    color: lavenderblush;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+.nav-sec li a:hover{
+    cursor: pointer;
+    color: goldenrod;
+    text-decoration: underline;
+}
+header div h2{
+    color: darkred;
+    font-size: 2.3em;
+}
+#hom{
+    padding-top: 4%;
+    margin-bottom: 10%;
+}
+#welcome-section{
+    background-image: url('images/austin-chan-ukzHlkoz1IE-unsplash.jpg');
+    width: 100%;
+    height: 360px;
+    background-color: rgba(0.5,0.3,0 ,1 );
+    background-size:contain ;
+    background-attachment: scroll;
+    font: 2.5em sans-serif;
+    margin-top: 90px;
+    color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#welcome-section h1{
+    text-transform: uppercase;
+    color: darksalmon;
+    text-decoration: underline;
+}
+#welcome-section h2, h3{
+    text-transform: capitalize;
+}
+#welcome-section li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    border:thick solid red;
+    margin-top: 40%;
+    background-color: crimson;
+    color: floralwhite;
+    transition: 0.5s ease-in;
+}
+#welcome-section li a:hover{
+   text-decoration: underline;
+   color: blue;
+   cursor: pointer;
+}
+#about{
+    width: 80%;
+   line-height: 140%;
+    display: flex;
+  
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: lightgray;
+    padding-top: 9%;
+    margin-bottom: 10%;
+}
+#about h2{
+   text-transform: capitalize;
+   font-size: 2.6em;
+   color: lightslategrey;
+   text-align: center;
+   transition: 0.5s ease-in;
+}
+#about h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.aboutme{
+    padding-top: 30px;
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 15%;
+}
+#about p{
+    font-size: 1.5em;
+    margin-left: 16%;
+}
+.skills{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skills div{
+    font-size: 1.3em;
+    padding-top: 30px;
+    padding-left: 15%;
+   
+}
+
+#certificate{
+    width: 80%;
+   line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: lightgray;
+   padding-top: 9%;
+    margin-bottom: 10%;
+}
+#certificate h2{
+    
+   text-transform: capitalize;
+   font-size: 2.6em;
+   color: lightslategrey;
+   text-align: center;
+   transition: 0.5s ease-in;
+}
+
+#certificate h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cert{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.certificate-img{
+    width: 400px;
+    height: 60%;
+    padding: 20px;
+}
+.certificate-img img{
+    width: 87%;
+    border: thick green solid;
+    transition: all 0.5s;
+}
+
+.certificate-img img:hover{
+   transform: scale(1.5);
+}
+
+
+#project{
+    width: 80%;
+   line-height: 140%;
+    display: flex;
+  
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: lightgray;
+    padding-top: 9%;
+    margin-bottom: 10%;
+}
+#project h2{
+    
+   text-transform: capitalize;
+   font-size: 2.6em;
+   color: lightslategrey;
+   text-align: center;
+   transition: 0.5s ease-in;
+}
+
+#project h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.project-wrapper{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+} 
+.project-wrapper2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proj-img{
+    width: 500px;
+    height: 500px;
+   padding: 30px;
+   
+}
+.proj-img img{
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    height: 78%;
+    border: 1px solid crimson;
+    border-radius: 30px;
+}
+
+.proj-title1{
+    position: absolute;
+    left: 10%;
+   padding-top: 15%;
+    
+}
+
+.proj-title1 a{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: chocolate;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.proj-title1 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.proj-title2{
+    position: absolute;
+    left: 52%;
+   padding-top: 15%;
+    
+}
+
+.proj-title2 a{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: chocolate;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.proj-title2 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.proj-title3{
+    position: absolute;
+    left: 4%;
+   padding-top: 15%;
+    
+}
+
+.proj-title3 a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: chocolate;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.proj-title3 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.proj-title4{
+    position: absolute;
+    left: 46%;
+   padding-top: 15%;
+    
+}
+
+.proj-title4 a{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: chocolate;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.proj-title4 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: crimson;
+}
+
+#contact{
+    width: 80%;
+   line-height: 140%;
+    display: flex;
+  
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: lightgray;
+    padding-top: 2%;
+}
+#contact h2{
+    
+   text-transform: capitalize;
+   font-size: 2.6em;
+   color: lightslategrey;
+   text-align: center;
+   transition: 0.5s ease-in;
+}
+
+#contact h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#form{
+    margin-top: 4%;
+    border: 2px solid black;
+}
+.form{
+    padding: 10px;
+    margin-left: 10%;
+}
+label{
+    font-size: 1.3em;
+    color: darkgray;
+}
+input{
+    width: 50%;
+}
+#textarea{
+    height: 200px;
+    width: 40% ;
+}
+#submit{
+    width: 8%;
+    margin-left: 20%;
+    color: darkmagenta;
+    font-weight: 700;
+}
+#footer{
+    height: 10%;
+    background-color: grey;
+}
+.text{
+    color: lavenderblush;
+    font-size: 1.1em;
+    padding-top: 10px;
+   text-align: center;
+   font-style: italic;
+}
+

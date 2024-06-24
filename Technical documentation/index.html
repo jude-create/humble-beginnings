@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical documentation</title>
+         <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main-doc">
+        <h1>Javascript</h1>
+        <nav id="nav-bar">
+            <ul>
+                <div class="nav-link">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#comment">Comments</a></li>
+                    <li><a href="#variable">Variable</a></li>
+                    <li><a href="#function">Function</a></li>
+                    <li><a href="#loop">loops</a></li>
+                    <li><a href="#dom">DOM</a></li>
+                </div>
+            </ul>
+        </nav>
+    </main>
+    <section class="main-section">
+      <div class="white">
+      <div id="introduction"> <h2>Introduction</h2></div>
+       <p> The	language	we’ll	be  learning	in	this	book	is	JavaScript,	often referred	to	as	the	
+         language	of	the	Web.	Nearly	all	web	browsers	can	run	JavaScript,	making	it	one	of	the most	popular
+         programming	languages	in	the	world.	It	has	a	low	barrier	to	entry―all	you need	to	program	in
+         JavaScript	is	a	text	editor	and	a	web	browser.	Although	it	is	easy	to	get started,	JavaScript	can	be	      
+         a	tricky	language	to	grasp	as	it	has	some	unique	features	and interesting	quirks.
+         Once	you	have mastered	it,	though,	you’ll	find	it	is	a	very	flexible	and expressive	language	that	can	create
+         some	powerful	applications</p<br/>
+         <p>JavaScript	is	a	high-level	language	that	is	compiled	at	run	time.	This	means	that	it	requires
+          an	engine	that	is	responsible	for	interpreting	programs	and	running	them.	The	most common	JavaScript	engines
+          are	found	in	browsers	such	as	Firefox,	Chrome,	or	Internet Explorer,	although	JavaScript	can	be	run	without	a
+         browser.	Many	modern	JavaScript engines	use	a	Just-in-time	(JIT)	interpreting	process,	which	considerably
+         speeds	up	the compilation	process,	making	the	programs	run	faster. JavaScript	is	also	a	dynamic	language,	
+         which	means	that	elements	of	a	program	can change	while	it	is	running. </p>
+      </div> 
+   </section>
+   <section class="main-section">
+     <div class="black">
+       <div id="comment"><h2>Comments</h2></div>
+       <p>You should write comments to explain what your code does.. They help make your code easier to read and understand.
+            This can help you and others who read your code </p>
+        <h4>  MULTI-LINE COMMENTS </h4>
+          <p>To write a comment that stretches over more than one line, you use a multi-line comment, starting with 
+           the<span class="com1"> /* characters and ending with the */ </span>characters. Anything between these characters is not processed  by the JavaScript 
+           interpreter.</p> 
+         <p> Multi-line comments are often used for descriptions of how the script works, or to prevent a section of the script from running 
+           when testing it. </p> 
+          <div class="com2">  /* This script displays a greeting to the user based upon the current time.<br/> It is an example from JavaScript & jQuery book */<br/>
+            var today= new Date(); var hour Now = today.getHours(); var greeting;
+           </div> 
+           <h4> SINGLE-LINE COMMENTS </h4>
+           <p>In a single-line comment, anything that follows the two forward slash characters // on that line will not be processed by the
+             JavaScript interpreter. Singleline comments are often used for short descriptions of what the code is doing. 
+            Good use of comments will help you if you come back to your code after several days or months. They also help those who are new
+             to your code. </p>
+          <div class="com2"> // Create a new date object</div>
+      </div>  
+   </section>
+   <section class="main-section">
+    <div class="white">
+      <div id="variable"> <h2>Variable</h2></div>
+       <p> Variables	are	common	in	programming	languages.	They	are	a	way	of	storing	a	value	in memory	for	later	use.	
+           In	JavaScript,	we	start	by	declaring	a	variable.</p>	<p>This	is	done	using the	keyword	var:</p>
+         <div class="var">
+              var	a;	//	declare	a	variable	called	a <<	undefined<br/>
+          var	message; <<	undefined
+        </div>
+        <p> Notice	that	the	console	outputs	undefined.	This	is	a	special	JavaScript	primitive
+          value	that is	covered	later	in	the	chapter,	but	it’s	basically	saying	that	the	variable	has	been	created 
+          but	is	yet	to	be	assigned	a	value. You	don’t	actually	have	to	declare	variables	before	using	them,	but	
+          as	we’ll	see	later,	bad things	can	happen	if	you	choose	not	to.	So	remember,	a	ninja	will	always	declare 
+          variables.</p> <p>You	can	even	declare	multiple	variables	at	once:</p>
+       <div class="var">
+            var	a,b,c;	//	3	variables	declare	at	once <<	undefined
+      </div>
+        <p> A	variable	name	can	start	with	any	upper	or	lower	case	letter,	an	underscore (_),	or	dollar	symbol	($).</p>	
+       <p>It	can	also	contain	numbers	but	cannot	start	with them.</p>	
+          <p>Variable	names	are	case	sensitive,	so	ANSWER	is	different	to	Answer	and answer. When	using	multiple	words	
+        for	variable	names	there	are	two	conventions that	can	be	used.	Camel	case	starts	with	a	lowercase	letter
+        	and	then	each new	word	is	capitalized.</p>
+       </div>
+   </section>
+   <section class="main-section">
+     <div class="black">
+
+      <div id="function"><h2>Function</h2></div>
+      <h4>Defining	a	Function</h4>
+        <p> There	are	three	ways	to	define	a	function. Function	Declarations To	define	a	function	literal	we	can	use	a	
+         function	declaration:</p>
+        <div class="fun">
+            function	hello() {		alert(“Hello	World!”); }
+        </div> 
+     <p>This	starts	with	the	function	keyword	and	is	followed	by
+            the	name	of	the	function,	which in	this	case	is	called<span class="fun2">	‘hello‘,</span>	followed	by	parentheses.	After	
+            this	is	a	block	that	contains the	code	for	the	function. This	is	known	as	a	named	function	as	
+            the	function	has	a	name:<span class="fun2">‘hello‘</span>. <h4>Function Expressions</h4> <p>Another	way	of	defining	a	function	literal	is	to	
+            create	a	function	expression.	This	assigns an	anonymous	function	to	a	variable:</p>
+      <div class="fun"> 
+          var	goodbye	=	function() {		alert(“Goodbye	World!”); }
+     </div> 
+     <p>The	function	in	this	example	is	known	as	an	anonymous
+            function	because	it	does	not	have a	name;	it	is	simply	created,	then	assigned	to	the	variable	goodbye.</p>
+            	<p>Alternatively	we	can create	a	named	function	expression	instead:</p>
+        <div class="fun"> 
+             var	goodbye	=	function	bye() {		alert(“Goodbye	World!”); }
+        </div>
+         <p>The	name	of	this	function	is	bye,	and	it	has	
+        been	assigned	to	the	variable	goodbye. Notice	also	that	the	example	ends	with	a	semicolon.	This	finishes
+            the	assignment statement,	whereas	a	normal	function	declaration	ends	in	a	block	(no	need	for	semicolons at	
+            the	end	of	blocks).</p>
+    </div>
+</section>
+
+<section class="main-section">
+  <div class="white">
+   <div id="loop"><h2>Loops</h2></div>
+    <p>Loops	will	repeat	a	piece	of	code	over	and	over	again	according	to	certain	conditions</p>
+        <h4> while	Loops</h4> <p>We’ll	start	by	looking	at	a	while	loop.	This	will	repeatedly	run	a	block	of	code	while
+         	a certain	condition	is	true	and	takes	the	following	structure:</p>
+    <div class="lope">
+         while	(condition)	{		do	something }
+    </div>
+    <h4>Infinite	Loops</h4>
+    <div class="lope">
+         var	n	=	1; while (n>0) {		alert(“Hello”);		n++; }
+    </div>
+   <h4> do	…	while	Loops:</h4>
+   <div class="lope">
+        do	{		do	something }	while(condition)
+  </div> 
+  <p>This	means	that	the	block	of	code	will	always	be	run	at	least	once,
+        regardless	of	the condition	being	true	or	not. </p>
+ <h4> for Loops</h4>
+   <p> for	loops	are	by	far	the	most	common	in	JavaScript	and	take	the	following	form:</p>
+   <div class="lope">
+        for	(initialization	;	condition	;	after)	{	do	something	} <br/>
+     for	(var	bottles	=	10	;	bottles	>	0	;	bottles—) {<br/>
+        alert("bottles" + green bottles)
+     }
+   </div>
+        
+    </p>
+  </div>
+</section>
+
+<section class="main-section">
+  <div class="black">
+   <div id="dom"><h2>DOM</h2></div>
+    <p> The	Document Object	Model,	or	DOM	for	short,	represents	an	HTML	document	as	a network	of	connected	nodes	that	
+        form	a	tree-like	structure[1]. Everything	on	a	web	page	is	represented	by	a	node―HTML	tags,	the	text	
+        inside	these tags,	even	the	attributes	of	a	tag	are	all	nodes.	The	HTML	tag	is	the	root	node	and	every other	part
+            of	the	document	is	a	child	node	of	this.</p>
+          <h4>  Getting	an	Element	by	Its	ID</h4>
+              <div class="mod">
+                   title	=	document.getElementById(‘title’);<br/>
+                    <<	h	id=“title”
+              </div> 
+          <h4> Get	Elements	by	Their	Tag	Name</h4>
+          <div class="mod">  
+               paragraphs	=	document.getElementsByTagName(‘p’);<br/>
+                <<	HTMLCollection	[	p.swim,	p#bike,]
+          </div>
+                    
+        <h4>  Get	Elements	by	Their	Class	Name</h4>
+        <div class="mod">
+              swim	=	document.getElementsByClassName(‘swim’);<br/>
+                     <<	p	class=“swim”
+        </div>
+        <h4> Query	Selectors</h4>  
+          <p>For	example,	the	following	could	be	used	instead	of	<em>document.getElementById():</em></p>
+          <div class="mod">
+               bike	=	document.querySelector(‘#bike’);<br/>
+                <<	p	id=“bike”
+
+         </div>
+         <p> And	this	could	be	used	instead	of<em>document.getElementsByClassName:</em></p>
+         <div class="mod"> 
+             swim	=	document.querySelectorAll(‘.swim’); <br/>
+                <<	NodeList	[	p.swima	]
+         </div>
+  </div>      
+</section>
+<footer>
+  <a href="index.html">Back to top</a><br/>
+    Made by jude-create 2020<br/>
+    Reference book: NOVICE TO NINJA <br/>JavaScript AND jQuery
+</footer>
+</body>
+</html>
